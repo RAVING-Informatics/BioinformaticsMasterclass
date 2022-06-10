@@ -77,9 +77,12 @@ Let's copy these instructions from `bioinformatics_masterclass/` to your folder 
 
 ```cp intro_to_bash.md <yourname>```
 
-Hint: typing out `into_to_bash.md` takes WAY too long, so we can use a shortcut. Once you've typed the first few letters of the file/folder/function, you can autocomplete it by pressing 'TAB'
+Hint: typing out `into_to_bash.md` takes WAY too long, so we can use a shortcut. Once you've typed the first few letters of the file/folder/function, you can autocomplete it by pressing 'TAB'.
+
 What if we wanted to copy 100 BAMs, or 500 VCFs? We can use wildcards to save us from using `cp` 600 times.
+
 `cp *.bam <destination>`
+
 This will copy anything with the suffix `.bam` to the destination. We could also copy all of the files associated with an individual, eg. `cp D22-1234* <destination>`. `*` is the wildcard for unlimited number of characters. For a single character, we can use `?`
 
 How do we move a file to a new destination?
