@@ -22,20 +22,20 @@ Let's start with some very simple navigation :)
 
 N.B. Unix commands are case sensitive (always lowercase)
 
-**1. Find your current working directory**
+###**1. Find your current working directory**
 
 ```pwd```
 
 What do you see? you should get something like `/home/ubuntu`. This is the default landing sirectoy after logging in and is where we can store files and folders. 'Ubuntu' is our username (and the name of the operating system we are using).
 
-**2. List the files in the current working directory**
+###**2. List the files in the current working directory**
 
 ```ls```
 
 What do you see?
 Let's move to our data storage directory
 
-3. Change directory
+###**3. Change directory**
 
 ```cd /data```
 
@@ -48,7 +48,7 @@ What would happen if you tried to do `cd /bioinformatics_masterclass`? What's th
 
 Now we're in todays working folder. Since we are all working on the same project today, it's a good idea to create our own folder's so we don't ruin each others work.
 
-4. Create a folder
+###**4. Create a folder**
 
 ```mkdir <yourname>```
 
@@ -58,7 +58,7 @@ Replace `<yourname>` with yourname, obviously.
 We know how to move forward into a new directory, but how do we move back?
 You could always go back to `/data` with `cd /data` then into your subdirectories, but there's a much easier way
 
-5. Change directory back
+###**5. Change directory back**
 
 ```cd ..```
 
@@ -67,7 +67,7 @@ To go back more than one directory, simply run `cd ../..` (and so on until you a
 
 Now we have set up todays workshop folder, let's copy in the files we need.
 
-6. Copy files and folders
+###**6. Copy files and folders**
 
 The formula for copying is simple, `cp` followed by file(s), then a destination
 
@@ -83,14 +83,15 @@ What if we wanted to copy 100 BAMs, or 500 VCFs? We can use wildcards to save us
 This will copy anything with the suffix `.bam` to the destination. We could also copy all of the files associated with an individual, eg. `cp D22-1234* <destination>`. `*` is the wildcard for unlimited number of characters. For a single character, we can use `?`
 
 How do we move a file to a new destination?
-7. Moving files and folders
+
+###**7. Moving files and folders**
 
 This works in the same way as `cp`.
 
 ```mv <original_name> <destination>```
 
 Sometimes, when copying or downloading files from the internet, there could be two files with the same name. So how do we rename a file or folder?
-7. Renaming files and folders
+###**7. Renaming files and folders**
 
 ```mv <original_name> <new_name>```
 
