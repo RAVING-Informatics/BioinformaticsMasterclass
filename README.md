@@ -1,6 +1,6 @@
 # Bioinformatics Masterclass
 
-## Logging in
+## **Logging in**
 
 We're logging in to our virtual machine (Nimbus) hosted by Pawsey @ Curtin. 
 1. Open MobaXterm (should already be installed)
@@ -16,19 +16,19 @@ You should then see something like
 
 After the `$`, we can type our commands.
 
-## Introducing the shell
+## **Introducing the shell**
 
 Let's start with some very simple navigation :)
 
 N.B. Unix commands are case sensitive (always lowercase)
 
-1. Find your current working directory
+**1. Find your current working directory**
 
 ```pwd```
 
 What do you see? you should get something like `/home/ubuntu`. This is the default landing sirectoy after logging in and is where we can store files and folders. 'Ubuntu' is our username (and the name of the operating system we are using).
 
-2. List the files in the current working directory
+**2. List the files in the current working directory**
 
 ```ls```
 
