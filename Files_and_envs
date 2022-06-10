@@ -8,4 +8,17 @@ In this workshop, we will create an environment using anaconda, a package and en
 
 ## Creating an environment
 
-We have already install conda
+We have already installed conda.
+
+Let's make an environment with some tools for ...........
+
+1. See usage instructions
+
+```conda --help```
+
+How do we create a new environment?
+
+2. Create new environemnt
+
+```conda create -n vcftools -c bioconda vcftools```
+This installs VCFtools, a tool for manipulating VCF files.
