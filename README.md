@@ -28,6 +28,10 @@ N.B. Unix commands are case sensitive (always lowercase)
 
 What do you see? you should get something like `/home/ubuntu`. This is the default landing sirectoy after logging in and is where we can store files and folders. 'Ubuntu' is our username (and the name of the operating system we are using).
 
+What if I don't know how to use a command?
+`man pwd` and you will see a user manual. Press `q` to quit. If `man` doesn't work, try `pwd --help`.
+
+
 ### **2. List the files in the current working directory**
 
 ```ls```
