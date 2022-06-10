@@ -1,4 +1,4 @@
-# Bioinformatics Masterclass
+# Bioinformatics Masterclass: Introduction
 
 ## **Logging in**
 
