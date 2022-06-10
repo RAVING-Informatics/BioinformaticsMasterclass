@@ -18,6 +18,10 @@ Let's make an environment with some tools for ...........
 
 How do we create a new environment?
 
+Try
+
+```conda create --help```
+
 2. Create new environemnt
 
 ```conda create -n vcftools -c bioconda vcftools```
