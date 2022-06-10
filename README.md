@@ -25,11 +25,13 @@ N.B. Unix commands are case sensitive (always lowercase)
 1. Find your current working directory
 
 ```pwd```
+
 What do you see? you should get something like `/home/ubuntu`. This is the default landing sirectoy after logging in and is where we can store files and folders. 'Ubuntu' is our username (and the name of the operating system we are using).
 
 2. List the files in the current working directory
 
 ```ls```
+
 What do you see?
 Let's move to our data storage directory
 
