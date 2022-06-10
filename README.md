@@ -40,7 +40,7 @@ Let's move to our data storage directory
 Now you can type in `ls` again to see what we have in `/data` and what we've been working on :) 
 Folders are highlighted in blue, and files in white .Let's move to todays work folder. 
 
-`cd bioinformatics_masterclass`
+```cd bioinformatics_masterclass```
 
 What would happen if you tried to do `cd /bioinformatics_masterclass`? What's the differrence?
 
@@ -66,11 +66,15 @@ To go back more than one directory, simply run `cd ../..` (and so on until you a
 Now we have set up todays workshop folder, let's copy in the files we need.
 
 6. Copy files and folders
-7. 
+
 The formula for copying is simple, `cp` followed by file(s), then a destination
+
 ```cp <some_file> <some_destination>```
+
 Let's copy these instructions from `bioinformatics_masterclass/` to your folder (`/data/bioinformatics_masterclass/<yourname>/`)
+
 ```cp intro_to_bash.md <yourname>```
+
 Hint: typing out `into_to_bash.md` takes WAY too long, so we can use a shortcut. Once you've typed the first few letters of the file/folder/function, you can autocomplete it by pressing 'TAB'
 What if we wanted to copy 100 BAMs, or 500 VCFs? We can use wildcards to save us from using `cp` 600 times.
 `cp *.bam <destination>`
@@ -80,12 +84,14 @@ How do we move a file to a new destination?
 7. Moving files and folders
 
 This works in the same way as `cp`.
+
 ```mv <original_name> <destination>```
 
 Sometimes, when copying or downloading files from the internet, there could be two files with the same name. So how do we rename a file or folder?
 7. Renaming files and folders
 
 ```mv <original_name> <new_name>```
+
 But it's not a good idea to use wildcards for this. Overwirtten files are not recoverable.
 
 ## 
