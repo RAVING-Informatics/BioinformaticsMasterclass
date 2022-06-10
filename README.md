@@ -49,6 +49,7 @@ Now we're in todays working folder. Since we are all working on the same project
 4. Create a folder
 
 ```mkdir <yourname>```
+
 Replace `<yourname>` with yourname, obviously.
 `cd` into your new directory
 
@@ -58,12 +59,14 @@ You could always go back to `/data` with `cd /data` then into your subdirectorie
 5. Change directory back
 
 ```cd ..```
+
 You can also view (`ls`) the previous directory if you don't want to change.
 To go back more than one directory, simply run `cd ../..` (and so on until you are at the root folder).
 
 Now we have set up todays workshop folder, let's copy in the files we need.
 
 6. Copy files and folders
+7. 
 The formula for copying is simple, `cp` followed by file(s), then a destination
 ```cp <some_file> <some_destination>```
 Let's copy these instructions from `bioinformatics_masterclass/` to your folder (`/data/bioinformatics_masterclass/<yourname>/`)
@@ -75,6 +78,7 @@ This will copy anything with the suffix `.bam` to the destination. We could also
 
 How do we move a file to a new destination?
 7. Moving files and folders
+
 This works in the same way as `cp`.
 ```mv <original_name> <destination>```
 
