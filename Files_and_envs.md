@@ -10,19 +10,29 @@ In this workshop, we will create an environment using anaconda, a package and en
 
 We have already installed conda.
 
-Let's make an environment with some tools for ...........
+Let's make an environment with some tools for viewing and manipulating VCF files.
 
 1. See usage instructions
 
-```conda --help```
+```bash
+conda --help
+```
 
-How do we create a new environment?
+   How do we create a new environment?
 
-Try
+   Try
 
-```conda create --help```
+```bash
+conda create --help
+```
 
 2. Create new environemnt
 
-```conda create -n vcftools -c bioconda vcftools```
-This installs VCFtools, a tool for manipulating VCF files.
+```bash
+conda create -n vcftools --channel bioconda bcftools
+```
+   This installs VCFtools, a tool for manipulating VCF files.
+   `-n` is the flag for the environment name, and `--channel` (or `-c`) tells conda to install bcftools from the bioconda channel.
+   When prompted, press `y` and enter.
+
+3. 
