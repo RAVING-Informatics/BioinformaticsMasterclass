@@ -7,5 +7,5 @@ To learn more about STRipy, there is a [website]([url](https://stripy.org/)), an
 ## Part 1 - Set up and install STRipy
 Whenever there is a new tool that you want to use, you need to find the repository in which the program code is stored, along with the relevent documentation that describes how and in what environment you can install it. Often, this repository is made using GitHub, and the link to the repository is available in the paper/website associated with the tool/program. Otherwise, you can search for the author's name in GitHub, or run a simple Google search. 
 
-  ==Task 1: Find the GitHub page containing the STRipy-pipeline code and installation instructions==
+  ==Task 1 Find the GitHub page containing the STRipy-pipeline code and installation instructions==
 
