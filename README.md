@@ -3,6 +3,10 @@
 ## **Logging in**
 
 We're logging in to our virtual machine (Nimbus) hosted by Pawsey @ Curtin. 
+
+Save the private key file to your desktop or somewhere convienient
+
+### **Windows users**
 1. Open MobaXterm
 2. Click 'Session'
 3. Click 'SSH'
@@ -10,7 +14,12 @@ We're logging in to our virtual machine (Nimbus) hosted by Pawsey @ Curtin.
 5. Under Specify username, type 'ubuntu'
 6. Click 'Advanced SSH settings'
 7. Tick 'Use private key'
-8. Click the blue folder next to it and navigate to the private key file that was sent to you ('mykey2.pem')
+8. Click the blue folder next to it and navigate to the private key file ('mykey2.pem')
+
+### **Mac users**
+1. Open terminal
+2. Copy the following text: `ssh -i /Desktop/mykey2.pem ubuntu@146.118.68.201`
+3. Press enter
 
 You should then see something like
 `ubuntu@ravinginformatics2:~$`
