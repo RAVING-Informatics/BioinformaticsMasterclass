@@ -3,13 +3,13 @@
 ## **Logging in**
 
 We're logging in to our virtual machine (Nimbus) hosted by Pawsey @ Curtin. 
-1. Open MobaXterm (should already be installed)
-2. Under 'Find existing session or server name...' put in the server address '146.118.68.201' and press enter
+1. Open MobaXterm
 3. Click 'SSH'
-4. Click 'Advanced SSH settings'
-5. Tick 'Use private key'
-6. Click the blue folder next to it and navigate to the private key file that was sent to you ('mykey2.pem'
-7. After getting prompted for 'login as', type 'ubuntu'
+4. Under Remote host, put in the server address `146.118.68.201`
+5. Click 'Advanced SSH settings'
+6. Tick 'Use private key'
+7. Click the blue folder next to it and navigate to the private key file that was sent to you ('mykey2.pem')
+8. After getting prompted for 'login as', type 'ubuntu'
 
 You should then see something like
 `ubuntu@ravinginformatics2:~$`
