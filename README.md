@@ -7,10 +7,10 @@ We're logging in to our virtual machine (Nimbus) hosted by Pawsey @ Curtin.
 2. Click 'Session'
 3. Click 'SSH'
 4. Under Remote host, put in the server address `146.118.68.201`
-5. Click 'Advanced SSH settings'
-6. Tick 'Use private key'
-7. Click the blue folder next to it and navigate to the private key file that was sent to you ('mykey2.pem')
-8. After getting prompted for 'login as', type 'ubuntu'
+5. Under Specify username, type 'ubuntu'
+6. Click 'Advanced SSH settings'
+7. Tick 'Use private key'
+8. Click the blue folder next to it and navigate to the private key file that was sent to you ('mykey2.pem')
 
 You should then see something like
 `ubuntu@ravinginformatics2:~$`
