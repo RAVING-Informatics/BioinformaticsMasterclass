@@ -4,6 +4,7 @@
 
 We're logging in to our virtual machine (Nimbus) hosted by Pawsey @ Curtin. 
 1. Open MobaXterm
+2. Click 'Session'
 3. Click 'SSH'
 4. Under Remote host, put in the server address `146.118.68.201`
 5. Click 'Advanced SSH settings'
