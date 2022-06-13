@@ -124,5 +124,3 @@ N.B. Unix commands are case sensitive (always lowercase)
   ```
 
   But it's not a good idea to use wildcards for this. Overwirtten files are not recoverable.
-
-## 
