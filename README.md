@@ -19,8 +19,6 @@ After the `$`, we can type our commands.
 
 ## **Introducing the shell**
 
-Let's start with some very simple navigation :)
-
 N.B. Unix commands are case sensitive (always lowercase)
 
 1. Find your current working directory
@@ -29,7 +27,7 @@ N.B. Unix commands are case sensitive (always lowercase)
    pwd
    ```
 
-   What do you see? you should get something like `/home/ubuntu`. This is the default landing sirectoy after logging in and is where we can store files and folders. 'Ubuntu' is our username (and the name of the operating system we are using).
+   What do you see? you should get `/home/ubuntu`. This is the default landing directoy after logging in and is where we can store files and folders. 'Ubuntu' is our username (and the name of the operating system we are using).
 
    What if I don't know how to use a command?
    `man pwd` and you will see a user manual. Press `q` to quit. If `man` doesn't work, try `pwd --help`.
