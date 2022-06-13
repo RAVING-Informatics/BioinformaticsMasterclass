@@ -7,5 +7,15 @@ To learn more about STRipy, there is a [website]([url](https://stripy.org/)), an
 ## Part 1 - Set up and install STRipy
 Whenever there is a new tool that you want to use, you need to find the repository in which the program code is stored, along with the relevent documentation that describes how and in what environment you can install it. Often, this repository is made using GitHub, and the link to the repository is available in the paper/website associated with the tool/program. Otherwise, you can search for the author's name in GitHub, or run a simple Google search. 
 
-  ==Task 1 Find the GitHub page containing the STRipy-pipeline code and installation instructions==
+  > **Task 1: Find the repository containing the STRipy-pipeline code and installation instructions**
+
+You will notice that the repository for STRipy-pipeline is actually kept in GitLab, which has functionality and an interface that is brodly the same as GitHub. 
+
+  > **Task 2: Read the README.md file, which gives an overview of the tool and how to set it up**
+
+For now, just read the [Description](Description) and [Requirements and installation instructions]([url](https://gitlab.com/andreassh/stripy-pipeline#requirements-and-installation-instructions)) sections. We can look at pipelne configuration once it is set-up. 
+
+I have already installed stripy on the virtual machine, however I am going to get each of you to do it yourselves in your own environment.
+
+  > **Task 3: Create a directory within the /data directory that will act as a working directory for this tutorial**
 
