@@ -4,7 +4,7 @@ When starting a new project, it's a good idea to make a new environemnt. This is
 
 To solve this issue, we install them in environments which can't see each other. This also means it's harder to accidently break something :)
 
-In this workshop, we will create an environment using anaconda, a package and environment manager. Conda also makes it very simple to install tools.
+In this workshop, we will create an environment using anaconda, a package and environment manager. Conda also makes it very simple to install bioinformatics tools.
 
 ## Creating an environment
 
