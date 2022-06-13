@@ -14,37 +14,37 @@ Let's make an environment with some tools for viewing and manipulating VCF files
 
 1. See usage instructions
 
-```bash
-conda --help
-```
+   ```bash
+   conda --help
+   ```
 
    How do we create a new environment?
 
    Try
 
-```bash
-conda create --help
-```
+   ```bash
+   conda create --help
+   ```
 
 2. Create new environemnt
 
-```bash
-conda create -n bcftools --channel bioconda bcftools
-```
+   ```bash
+   conda create -n bcftools --channel bioconda bcftools
+   ```
    This installs VCFtools, a tool for manipulating VCF files.
    `-n` is the flag for the environment name, and `--channel` (or `-c`) tells conda to install bcftools from the bioconda channel.
    When prompted, press `y` and enter.
 
 3. Activate your environment
 
-```bash
-conda activate bcftools
-```
+   ```bash
+   conda activate bcftools
+   ```
    You should see `(bcftools)` at the start of your bash prompt line. This is how you know which environment you are in.
    
 4. View a compressed VCF
 
-   Most VCFs are compressed as they take up a lot of space and are too large to view. They are compressed using gzip ot bgzip, similar to compressed zip folders on a computer. They generally have the suffix `.gz`
+   Most VCFs are compressed as they take up a lot of space and are too large to view. They are compressed using gzip ot bgzip, similar to compressed zip folders on a  computer. They generally have the suffix `.gz`
    We can view a file on bash simply using `less <my_file>` but this can't view a compressed file. (Press `q` to quit).
    We could unzip the file using `gunzip <my_file>.vcf.gz` but this is slow and unessecary. So we can use bcftools.
    
