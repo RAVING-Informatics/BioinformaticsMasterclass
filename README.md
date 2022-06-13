@@ -22,7 +22,7 @@ Let's start with some very simple navigation :)
 
 N.B. Unix commands are case sensitive (always lowercase)
 
-### **1. Find your current working directory**
+1. Find your current working directory
 
   ```bash
   pwd
