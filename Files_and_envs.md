@@ -31,7 +31,7 @@ Let's make an environment with some tools for viewing and manipulating VCF files
    ```bash
    conda create -n bcftools --channel bioconda bcftools
    ```
-   This installs VCFtools, a tool for manipulating VCF files.
+   This installs bcftools, a tool for manipulating VCF files.
    `-n` is the flag for the environment name, and `--channel` (or `-c`) tells conda to install bcftools from the bioconda channel.
    When prompted, press `y` and enter.
 
@@ -50,7 +50,7 @@ Let's make an environment with some tools for viewing and manipulating VCF files
    
    ```bash
    cd <your_working_directory>
-   cp ../D22_1234.hg38.vcf.gz .
+   cp ../D22_1234.hg38.vcf.gz ../D22_1234.hg38.vcf.gz.tbi .
    ```
    
    Print the header
@@ -58,8 +58,8 @@ Let's make an environment with some tools for viewing and manipulating VCF files
    bcftools view -h D22_1234.hg38.vcf.gz
    ```
    
-   Why don't we view everything? 
+   Why don't we just view everything? 
    ```bash
    bcftools view D22_1234.hg38.vcf.gz | wc -l
    ```
-   We 'piped' `|` the full output 
+   We 'piped' `|` the full output of bcftools view (the whole VCF) to the bash word count function in line count mode.
