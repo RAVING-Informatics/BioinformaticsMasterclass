@@ -101,3 +101,48 @@ Essentially, the $PATH is an environmental variable. Environment variables hold 
 So rather than having to type the full path to the executable file: `/data/samtools-1.13/bin/samtools` you can type `samtools`. This is a great shortcut. 
 
 ## Part 2 - Configure STRipy
+Navigate to the ["Configure"]([url](https://gitlab.com/andreassh/stripy-pipeline#configuration)) subsection of the STRipy-pipeline page. Have a read of hte diferent pipeline parameters that you can modify and their default values. 
+- All of these parameters can be adjusted in using a file called `config.json` which should be in your stripy-pipeline working directory as it was cloned from the git lab repository.
+ > **Task 7: Navigate to the config.json file and open it to have a look how it is formatted**
+- The first four parameters define where the executable file is stored for each of the dependencies. As mentioned, these would usually be added to the $PATH environmental variable so that you can just type the tool name rather than spelling out the entire path. Because we are not adding the tool to the $PATH, you will need to specify the full path name in the config file. 
+- For the remaining parameters, just keep as default. 
+
+## Part 3 - Run STRipy
+Navigate to the ["Usage"]([url](https://gitlab.com/andreassh/stripy-pipeline#usage)) subsection of the STRipy-pipeline page. Have a read.
+- You will notice that you will need a reference genome file in .fasta (.fa). This is already available in the Nimbus instance: `/data/references/Homo_sapiens_assembly38.fasta`
+- You will also need some input data. All of the data we wil be using is in the `/data/BioinformaticsMasterclass/bams` folder.
+
+ > **Task 8: To run STRipy-pipeline we are going to make a run script. Make a new file using `nano` called `run-stripy.sh` within the `stripy-pipeline/` working directory.
+```bash
+cd stripy-pipeline #if you're not already there
+nano run-stripy.sh
+```
+This will open a new window in terminal where you can edit the file. Start typing! Use the code in the stripy git lab as a guide (printed below for reference)
+```bash
+python3 stri.py \
+        --genome hg38 \
+        --reference reference/hg38.fa \
+        --output results/ \
+        --locus AFF2,ATXN3,HTT,PHOX2B \
+        --input examples/Sample001.bam
+```
+Some things to keep in mind while you're writing your script:
+- Begin the script with `#!/bin/bash` - this is the "she-bang" line or script header; it tells the OS which shell to use. I always use bash by default.  
+- Make sure to include the backslash character `\` at the end of each line. This breaks the line of code allowing for the next line continuation. This ensures that all of the parameters specified are linked back to the original command `python3 stri.py`
+- Specify the output directory you would like to keep your results in. You will also need to make the directory using `mkdir` command. 
+- We use hg38 for our analyses. Hg37 is also an option but the reference .fasta file is in hg38 so stick with that.
+
+ > **Task 9: Change the permissions on the run script to allow it to run. This is done using the `chmod` command.
+```bash
+chmod u+x run-stripy.sh
+```
+The above command will make the file executable for your user.
+You can check the file permissions on a file by running.
+```bash
+ls -lh run-stripy.lh
+```
+To understand the output and `chmod u+x`, a good explanation is provided [here]([url](https://kb.iu.edu/d/abdb#:~:text=To%20view%20the%20permissions%20for,in%20a%20directory%20in%20Unix.&text=In%20the%20output%20example%20above,a%20file%20or%20a%20directory.)).
+ > **Task 10: Run the script!
+```bash
+./run-stripy.sh
+```
