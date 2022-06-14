@@ -2,6 +2,7 @@
 In this tutorial, we will practice our ability to set-up and run a simple informatics pipeline that runs on CLI.
 The pipeline we will use is STRipy, which was created by Andreas Halman with the aim of simplifying the process of genotyping known STR loci. STRipy was initially made as a GUI application, but this fromat has limited throughput capacity, so Andreas developed a pipeline version to query multiple samples and loci at once. 
 
+## Prerequisites
 To learn more about STRipy, there is a [website]([url](https://stripy.org/)), and an accompanying [paper]([url](https://onlinelibrary.wiley.com/doi/10.1002/humu.24382)) for detailed methods. The website contains a curated reference database of the known STR expansions, including the gene implicated, repeat region, repeat thresholds, disease association, and the number of repeats in a set of ~2500 unaffected controls.  
 
 ## Part 1 - Set up and install STRipy
@@ -132,6 +133,7 @@ Some things to keep in mind while you're writing your script:
 - You will notice that you will need a reference genome file in .fasta (.fa). This is already available in the Nimbus instance: `/data/references/Homo_sapiens_assembly38.fasta`
 - You will also need some input data. For now, use the example data to check that stripy is working as it should. 
 - Specify just a couple of loci as a start. Refer to the [STRipy database]([url](https://stripy.org/database)) for locus options. 
+- Use `standard` for the `--analysis` option.
 
  > **Task 9: Change the permissions on the run script to allow it to run. This is done using the `chmod` command.**
 ```bash
@@ -150,4 +152,4 @@ To understand the output and `chmod u+x`, a good explanation is provided [here](
 Troubleshoot as need be. 
 
 ## Part 3 - Run STRipy on Real Data
-All of the data we wil be using is in the `/data/BioinformaticsMasterclass/bams` folder.
+All of the data we wil be using is in the `/data/BioinformaticsMasterclass/bams` folder. 
