@@ -106,6 +106,6 @@ Let's make an environment with some tools for viewing and manipulating VCF files
    bash split_vcf.sh
    ```
 
-6. Challenge:
-   1. How many output files are there?
+6. Challenge: Use one line on bash to:
+   1. Get the number of output files
    2. Unzip all of the files
