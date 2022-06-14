@@ -26,6 +26,12 @@ Let's make an environment with some tools for viewing and manipulating VCF files
    conda create --help
    ```
 
+2. List all of the environments
+
+   ```bash
+   conda env list
+   ```
+
 2. Create new environemnt
 
    ```bash
@@ -38,9 +44,9 @@ Let's make an environment with some tools for viewing and manipulating VCF files
 3. Activate your environment
 
    ```bash
-   conda activate bcftools
+   conda activate bcftools_<your_name>
    ```
-   You should see `(bcftools)` at the start of your bash prompt line. This is how you know which environment you are in.
+   You should see `(bcftools_<your_name>)` at the start of your bash prompt line. This is how you know which environment you are in.
 
 ## Working with VCF files
 
