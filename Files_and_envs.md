@@ -55,16 +55,17 @@ We're now going to use bcftools to work with a joint-called exome VCF.
 4. View a compressed VCF
 
    Most VCFs are compressed as they take up a lot of space and are too large to view. They are compressed using gzip ot bgzip, similar to compressed zip folders on a  computer. They generally have the suffix `.gz` and are accompanied by an index file with the suffix `.tbi` or `.csi`. \
-   We can view a file on bash simply using `less <my_file>` but this can't view a compressed file. (Press `q` to quit).
+   We can view a file on bash simply using `less <my_file>` but VCF files are too big. (Press `q` to quit).
    We could unzip the file using `gunzip <my_file>.vcf.gz` to view it but they are generally too big.
    
    ```bash
    cd <your_working_directory>         #Remember you can use tab to autocomplete file, folder, or script names
-   cp ../D22_1234.hg38.vcf.gz ../D22_1234.hg38.vcf.gz.tbi .       #This copies the file into your working directory. 
+   cp ../bioinformatics_masterclass.vcf.gz ../bioinformatics_masterclass.gz.tbi .       #This copies the file into your working directory. 
    ```
    
    Print the header
    ```bash
+   head bioinformatics_masterclass.vcf.gz
    bcftools view -h bioinformatics_masterclass.vcf.gz
    ```
    
