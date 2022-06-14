@@ -107,12 +107,10 @@ Navigate to the ["Configure"]([url](https://gitlab.com/andreassh/stripy-pipeline
 - The first four parameters define where the executable file is stored for each of the dependencies. As mentioned, these would usually be added to the $PATH environmental variable so that you can just type the tool name rather than spelling out the entire path. Because we are not adding the tool to the $PATH, you will need to specify the full path name in the config file. 
 - For the remaining parameters, just keep as default. 
 
-## Part 3 - Run STRipy
+## Part 3 - Run STRipy on Test Data
 Navigate to the ["Usage"]([url](https://gitlab.com/andreassh/stripy-pipeline#usage)) subsection of the STRipy-pipeline page. Have a read.
-- You will notice that you will need a reference genome file in .fasta (.fa). This is already available in the Nimbus instance: `/data/references/Homo_sapiens_assembly38.fasta`
-- You will also need some input data. All of the data we wil be using is in the `/data/BioinformaticsMasterclass/bams` folder.
 
- > **Task 8: To run STRipy-pipeline we are going to make a run script. Make a new file using `nano` called `run-stripy.sh` within the `stripy-pipeline/` working directory.
+ > **Task 8: To run STRipy-pipeline we are going to make a run script. Make a new file using `nano` called `run-stripy.sh` within the `stripy-pipeline/` working directory.**
 ```bash
 cd stripy-pipeline #if you're not already there
 nano run-stripy.sh
@@ -131,8 +129,11 @@ Some things to keep in mind while you're writing your script:
 - Make sure to include the backslash character `\` at the end of each line. This breaks the line of code allowing for the next line continuation. This ensures that all of the parameters specified are linked back to the original command `python3 stri.py`
 - Specify the output directory you would like to keep your results in. You will also need to make the directory using `mkdir` command. 
 - We use hg38 for our analyses. Hg37 is also an option but the reference .fasta file is in hg38 so stick with that.
+- You will notice that you will need a reference genome file in .fasta (.fa). This is already available in the Nimbus instance: `/data/references/Homo_sapiens_assembly38.fasta`
+- You will also need some input data. For now, use the example data to check that stripy is working as it should. 
+- Specify just a couple of loci as a start. Refer to the [STRipy database]([url](https://stripy.org/database)) for locus options. 
 
- > **Task 9: Change the permissions on the run script to allow it to run. This is done using the `chmod` command.
+ > **Task 9: Change the permissions on the run script to allow it to run. This is done using the `chmod` command.**
 ```bash
 chmod u+x run-stripy.sh
 ```
@@ -141,8 +142,12 @@ You can check the file permissions on a file by running.
 ```bash
 ls -lh run-stripy.lh
 ```
-To understand the output and `chmod u+x`, a good explanation is provided [here]([url](https://kb.iu.edu/d/abdb#:~:text=To%20view%20the%20permissions%20for,in%20a%20directory%20in%20Unix.&text=In%20the%20output%20example%20above,a%20file%20or%20a%20directory.)).
- > **Task 10: Run the script!
+To understand the output and `chmod u+x`, a good explanation is provided [here]([url](https://kb.iu.edu/d/abdb#:~:text=To%20view%20the%20permissions%20for,in%20a%20directory%20in%20Unix.&text=In%20the%20output%20%20above,a%20file%20or%20a%20directory.)).
+ > **Task 10: Run the script!**
 ```bash
 ./run-stripy.sh
 ```
+Troubleshoot as need be. 
+
+## Part 3 - Run STRipy on Real Data
+All of the data we wil be using is in the `/data/BioinformaticsMasterclass/bams` folder.
