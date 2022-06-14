@@ -62,4 +62,9 @@ Let's make an environment with some tools for viewing and manipulating VCF files
    ```bash
    bcftools view D22_1234.hg38.vcf.gz | wc -l
    ```
-   We 'piped' `|` the full output of bcftools view (the whole VCF) to the bash word count function in line count mode.
+   We 'piped' `|` the full output of bcftools view (the whole VCF) to the bash word count `wc` function in line count `-l` mode.
+   
+5. Splitting a VCF into individual samples
+
+   Often some tools require only one individual per VCF file (eg. linkage analysis), while others can use a cohort VCF.
+   We can split a VCF using bcftools, and we can specify if we want the output VCFs to be compressed or not.
