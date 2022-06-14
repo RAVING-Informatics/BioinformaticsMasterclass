@@ -101,7 +101,7 @@ N.B. Unix commands are case sensitive (always lowercase)
      Let's copy these instructions from `bioinformatics_masterclass/` to your folder (`/data/bioinformatics_masterclass/<yourname>/`)
 
      ```bash
-     cp intro_to_bash.md <yourname>
+     cp Introduction.md <yourname>
      ```
 
      Hint: typing out `into_to_bash.md` takes WAY too long, so we can use a shortcut. Once you've typed the first few letters of the file/folder/function, you can autocomplete it by pressing 'TAB'.
