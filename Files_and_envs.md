@@ -44,9 +44,9 @@ Let's make an environment with some tools for viewing and manipulating VCF files
    
 4. View a compressed VCF
 
-   Most VCFs are compressed as they take up a lot of space and are too large to view. They are compressed using gzip ot bgzip, similar to compressed zip folders on a  computer. They generally have the suffix `.gz`
+   Most VCFs are compressed as they take up a lot of space and are too large to view. They are compressed using gzip ot bgzip, similar to compressed zip folders on a  computer. They generally have the suffix `.gz` and are accompanied by an index file with the suffix `.tbi` or `.csi`. \
    We can view a file on bash simply using `less <my_file>` but this can't view a compressed file. (Press `q` to quit).
-   We could unzip the file using `gunzip <my_file>.vcf.gz` but this is slow and unessecary. So we can use bcftools.
+   We could unzip the file using `gunzip <my_file>.vcf.gz` to view it but there are generally too big.
    
    ```bash
    cd <your_working_directory>
@@ -63,7 +63,7 @@ Let's make an environment with some tools for viewing and manipulating VCF files
    bcftools view D22_1234.hg38.vcf.gz | wc -l
    ```
    We 'piped' `|` the full output of bcftools view (the whole VCF) to the bash word count `wc` function in line count `-l` mode.
-   
+     
 5. Splitting a VCF into individual samples
 
    Often some tools require only one individual per VCF file (eg. linkage analysis), while others can use a cohort VCF.
