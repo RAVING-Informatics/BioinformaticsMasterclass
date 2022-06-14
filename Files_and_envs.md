@@ -109,3 +109,4 @@ Let's make an environment with some tools for viewing and manipulating VCF files
 6. Challenge:
    1. How many output files are there?
    2. Unzip all of the files
+   >! spoilers
