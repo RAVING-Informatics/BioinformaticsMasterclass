@@ -65,12 +65,12 @@ We're now going to use bcftools to work with a joint-called exome VCF.
    
    Print the header
    ```bash
-   bcftools view -h D22_1234.hg38.vcf.gz
+   bcftools view -h bioinformatics_masterclass.vcf.gz
    ```
    
    Why don't we just view everything? 
    ```bash
-   bcftools view D22_1234.hg38.vcf.gz | wc -l
+   bcftools view bioinformatics_masterclass.vcf.gz | wc -l
    ```
    We 'piped' `|` the full output of bcftools view (the whole VCF) to the bash word count `wc` function in line count `-l` mode.
      
