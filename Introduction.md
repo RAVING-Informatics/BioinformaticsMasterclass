@@ -4,7 +4,7 @@
 
 We're logging in to our virtual machine (Nimbus) hosted by Pawsey @ Curtin. 
 
-Save the private key file to your desktop or somewhere convienient
+Save the private key file to your desktop or somewhere convenient
 
 ### **Windows users**
 1. Open MobaXterm
@@ -130,4 +130,4 @@ N.B. Unix commands are case sensitive (always lowercase)
      mv <original_name> <new_name>
      ```
 
-     But it's not a good idea to use wildcards for this. Overwirtten files are not recoverable.
+     But it's not a good idea to use wildcards for this. Overwritten files are not recoverable.
