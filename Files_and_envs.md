@@ -2,7 +2,7 @@
 
 When starting a new project, it's a good idea to make a new environemnt. This is because the tools we use on the command line have a lot of dependencies. When you install two tools, they might have conflicting dependencies. For example, STRipy needs python3.9.12, but SpliceAI needs python3.8.
 
-To solve this issue, we install them in environments which can't see each other. This also means it's harder to accidently break something :)
+To solve this issue, we install them in environments which can't see each other. This also means it's harder to accidently break something
 
 In this workshop, we will create an environment using anaconda, a package and environment manager. Conda also makes it very simple to install bioinformatics tools.
 
