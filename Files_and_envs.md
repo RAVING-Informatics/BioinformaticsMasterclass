@@ -44,6 +44,8 @@ Let's make an environment with some tools for viewing and manipulating VCF files
 
 ## Working with VCF files
 
+We're now going to use bcftools to work with a joint-called exome VCF
+
 4. View a compressed VCF
 
    Most VCFs are compressed as they take up a lot of space and are too large to view. They are compressed using gzip ot bgzip, similar to compressed zip folders on a  computer. They generally have the suffix `.gz` and are accompanied by an index file with the suffix `.tbi` or `.csi`. \
