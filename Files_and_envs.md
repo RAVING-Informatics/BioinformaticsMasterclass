@@ -25,11 +25,17 @@ Let's make an environment with some tools for viewing and manipulating VCF files
    ```bash
    conda create --help
    ```
+   
+2. See a list of all of the environments
+
+   ```bash
+   conda env list
+   ```
 
 2. Create new environemnt
 
    ```bash
-   conda create -n bcftools --channel bioconda bcftools
+   conda create -n bcftools --channel bioconda bcftools_<your_name>
    ```
    This installs bcftools, a tool for manipulating VCF files.
    `-n` is the flag for the environment name, and `--channel` (or `-c`) tells conda to install bcftools from the bioconda channel.
@@ -38,9 +44,9 @@ Let's make an environment with some tools for viewing and manipulating VCF files
 3. Activate your environment
 
    ```bash
-   conda activate bcftools
+   conda activate bcftools_<your_name>
    ```
-   You should see `(bcftools)` at the start of your bash prompt line. This is how you know which environment you are in.
+   You should see `(bcftools_<your_name>)` at the start of your bash prompt line. This is how you know which environment you are in.
 
 ## Working with VCF files
 
