@@ -56,8 +56,8 @@ N.B. Unix commands are case sensitive (always lowercase)
      cd /data
      ```
 
-     Now you can type in `ls` again to see what we have in `/data` and what we've been working on :) 
-     Folders are highlighted in blue, and files in white .Let's move to todays work folder. 
+     Now you can type in `ls` again to see what we have in `/data` and what we've been working on 😀 \
+     Folders are highlighted in blue, and files in white. Let's move to todays work folder. 
 
      ```bash
      cd bioinformatics_masterclass
