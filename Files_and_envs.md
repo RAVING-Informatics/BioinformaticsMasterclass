@@ -50,7 +50,7 @@ Let's make an environment with some tools for viewing and manipulating VCF files
    
    ```bash
    cd <your_working_directory>
-   cp ../D22_1234.hg38.vcf.gz ../D22_1234.hg38.vcf.gz.tbi .
+   cp ../D22_1234.hg38.vcf.gz ../D22_1234.hg38.vcf.gz.tbi .         #Remember you can use tab to autocomplete file, folder, or script names
    ```
    
    Print the header
@@ -77,7 +77,7 @@ Let's make an environment with some tools for viewing and manipulating VCF files
    
    We can view and edit the bash script with `nano <my_script.sh>`, a simple text editor.
    ```bash
-   cp ../split_vcf.sh            #Remember you can use tab to autocomplete file, folder, or script names
+   cp ../split_vcf.sh
    nano split_vcf.sh
    ```
    You will see something like this:
