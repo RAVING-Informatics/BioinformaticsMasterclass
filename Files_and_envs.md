@@ -106,7 +106,7 @@ Let's make an environment with some tools for viewing and manipulating VCF files
    bash split_vcf.sh
    ```
 
-6. Challenge 🤓 Using just one line:
+6. Challenge 🤓 Use just one line to:
    1. Get the number of output files
    2. Unzip all of the files
-   >! Hint: everything you will need ot use has already been mentioned, and you don't need to use bcftools.
+   > Hint: everything you will need ot use has already been mentioned, and you don't need to use bcftools
