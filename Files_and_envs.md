@@ -49,8 +49,8 @@ Let's make an environment with some tools for viewing and manipulating VCF files
    We could unzip the file using `gunzip <my_file>.vcf.gz` to view it but they are generally too big.
    
    ```bash
-   cd <your_working_directory>
-   cp ../D22_1234.hg38.vcf.gz ../D22_1234.hg38.vcf.gz.tbi .         #Remember you can use tab to autocomplete file, folder, or script names
+   cd <your_working_directory>         #Remember you can use tab to autocomplete file, folder, or script names
+   cp ../D22_1234.hg38.vcf.gz ../D22_1234.hg38.vcf.gz.tbi .
    ```
    
    Print the header
