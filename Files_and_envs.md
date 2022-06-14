@@ -41,7 +41,9 @@ Let's make an environment with some tools for viewing and manipulating VCF files
    conda activate bcftools
    ```
    You should see `(bcftools)` at the start of your bash prompt line. This is how you know which environment you are in.
-   
+
+## Working with VCF files
+
 4. View a compressed VCF
 
    Most VCFs are compressed as they take up a lot of space and are too large to view. They are compressed using gzip ot bgzip, similar to compressed zip folders on a  computer. They generally have the suffix `.gz` and are accompanied by an index file with the suffix `.tbi` or `.csi`. \
