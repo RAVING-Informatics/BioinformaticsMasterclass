@@ -35,7 +35,7 @@ Let's make an environment with some tools for viewing and manipulating VCF files
 2. Create new environment
 
    ```bash
-   conda create -n bcftools --channel bioconda bcftools_<your_name>
+   conda create -n bcftools_<your_name> --channel bioconda bcftools
    ```
    This installs [bcftools](http://samtools.github.io/bcftools/bcftools.html), a tool for manipulating VCF files.
    `-n` is the flag for the environment name, and `--channel` (or `-c`) tells conda to install bcftools from the bioconda channel. Conda channels are the locations where packages are stored. 
