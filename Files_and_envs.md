@@ -32,7 +32,7 @@ Let's make an environment with some tools for viewing and manipulating VCF files
    conda env list
    ```
 
-2. Create new environemnt
+2. Create new environment
 
    ```bash
    conda create -n bcftools --channel bioconda bcftools_<your_name>
@@ -50,7 +50,7 @@ Let's make an environment with some tools for viewing and manipulating VCF files
 
 ## Working with VCF files
 
-We're now going to use bcftools to work with a joint-called exome VCF
+We're now going to use bcftools to work with a joint-called exome VCF.
 
 4. View a compressed VCF
 
@@ -60,7 +60,7 @@ We're now going to use bcftools to work with a joint-called exome VCF
    
    ```bash
    cd <your_working_directory>         #Remember you can use tab to autocomplete file, folder, or script names
-   cp ../D22_1234.hg38.vcf.gz ../D22_1234.hg38.vcf.gz.tbi .
+   cp ../D22_1234.hg38.vcf.gz ../D22_1234.hg38.vcf.gz.tbi .       #This copies the file into your working directory. 
    ```
    
    Print the header
@@ -119,4 +119,4 @@ We're now going to use bcftools to work with a joint-called exome VCF
 6. Challenge 🤓 Use just one line to:
    1. Get the number of output files
    2. Unzip all of the files
-   > Hint: everything you will need ot use has already been mentioned, and you don't need to use bcftools
+   > Hint: everything you will need to use has already been mentioned, and you don't need to use bcftools
