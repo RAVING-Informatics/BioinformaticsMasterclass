@@ -96,10 +96,10 @@ Let's make an environment with some tools for viewing and manipulating VCF files
    
    
    I last used this on a different file, so we need to replace the filename to that of our joint called VCF.
-   Where it says `old_joint.vcf.gz` change it to your VCF's name \
-   Press **Ctrl + X** to exit \
-   Press **Y** to save \
-   Press **Enter** to keep the same name \
+   Where it says `old_joint.vcf.gz` change it to your VCF's name
+   1. Press **Ctrl + X** to exit 
+   2. Press **Y** to save 
+   3. Press **Enter** to keep the same name 
    
    Now we can run our script:
    ```bash
