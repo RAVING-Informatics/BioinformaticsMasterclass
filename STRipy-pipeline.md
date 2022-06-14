@@ -3,7 +3,7 @@ In this tutorial, we will practice our ability to set-up and run a simple inform
 The pipeline we will use is STRipy, which was created by Andreas Halman with the aim of simplifying the process of genotyping known STR loci. STRipy was initially made as a GUI application, but this fromat has limited throughput capacity, so Andreas developed a pipeline version to query multiple samples and loci at once. 
 
 ## Prerequisites
-To learn more about STRipy, there is a [website]([url](https://stripy.org/)), and an accompanying [paper]([url](https://onlinelibrary.wiley.com/doi/10.1002/humu.24382)) for detailed methods. The website contains a curated reference database of the known STR expansions, including the gene implicated, repeat region, repeat thresholds, disease association, and the number of repeats in a set of ~2500 unaffected controls.  
+To learn more about STRipy, there is a [website](https://stripy.org/), and an accompanying [paper]([url](https://onlinelibrary.wiley.com/doi/10.1002/humu.24382)) for detailed methods. The website contains a curated reference database of the known STR expansions, including the gene implicated, repeat region, repeat thresholds, disease association, and the number of repeats in a set of ~2500 unaffected controls.  
 
 ## Part 1 - Set up and install STRipy
 NOTE: I have already installed stripy on the virtual machine, however I am going to get each of you to do it yourselves in your own environment.
