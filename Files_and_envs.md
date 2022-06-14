@@ -83,7 +83,7 @@ Let's make an environment with some tools for viewing and manipulating VCF files
    You will see something like this:
 
    ```bash
-   #! /bin/bash                              #Is a 'shebang'. This is at the top of almost all bash scripts and it tells the shell where to find the interpretter for running your script
+   #! /bin/bash                              #A 'shebang' is at the top of almost all bash scripts and it tells the shell where to find the interpretter for running your script
 
    for file in old_joint.vcf.gz              #We start a for loop, where we tell it to find just our file of interest (similar to how `ls <my_file>` would return just that file)
    do
