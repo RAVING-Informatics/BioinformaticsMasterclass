@@ -89,15 +89,15 @@ Let's make an environment with some tools for viewing and manipulating VCF files
    7. Close the second loop 
 
    ```bash
-   #! /bin/bash           #Is a 'shebang'. This is at the top of almost all bash scripts and it tells the shell where to find the interpretter for running your script
+   #! /bin/bash                              #Is a 'shebang'. This is at the top of almost all bash scripts and it tells the shell where to find the interpretter for running your script
 
-   for file in old_joint.vcf.gz        #We start a for loop, where we tell it to find just our file of interest (similar to how `ls <my_file>` would return just that file)
+   for file in old_joint.vcf.gz              #We start a for loop, where we tell it to find just our file of interest (similar to how `ls <my_file>` would return just that file)
    do
            for sample in `bcftools query -l $file`       #We start a loop over the output of ``bcftools query -l $file``, where each loop takes one `sample` (one individual) and passes it to the next line:
            do
                    bcftools view -Oz -s $sample -o $sample.vcf $file       #We use `bcftools view -s $sample` to save our VCF using the inidividual's name defined in the VCF header.
-           done            #Close the first loop
-   done                    #Close the second loop
+           done                              #Close the first loop
+   done                                      #Close the second loop
    ```
    
    
