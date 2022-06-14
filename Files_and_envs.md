@@ -68,3 +68,31 @@ Let's make an environment with some tools for viewing and manipulating VCF files
 
    Often some tools require only one individual per VCF file (eg. linkage analysis), while others can use a cohort VCF.
    We can split a VCF using bcftools, and we can specify if we want the output VCFs to be compressed or not.
+   
+   There are multiple steps to do this, but they can all be combined into one.
+   1. `bcftools query -l <my_file>` is used to list the individual samples within the VCF
+   2. `bcftools view -s <my_individual>` is used to extract the specified individual.
+   We could run it individually for each, but joint VCFs can have hundreds or thousands of individuals.
+   We can combine all of these steps together into a simple bash script.
+   
+   We can view and edit the bash script with `nano <my_script.sh>`, a simple text editor.
+   ```
+   cp ../split_vcf.sh            #Remember you can use tab to autocomplete file, folder, or script names
+   nano split_vcf.sh
+   ```
+   You can see a few parts to the script;
+   1. Is a 'shebang'. This is at the top of almost all bash scripts and it tells the shell where to find the interpretter for running your script
+   3. We start a for loop, where we tell it to find just our file of interest (similar to how `ls <my_file>` would return just that file)
+   4. We start a loop over the output of ``bcftools query -l $file``, where each loop takes one `sample` (one individual) and passes it to the next line:
+   5. We use `bcftools view -s $sample` to save our VCF using the inidividual's name defined in the VCF header.
+   6. Close the first loop
+   7. Close the second loop    
+   
+   
+   I last used this on a different file, so we need to replace the filename to that of our joint called VCF.
+   Where it says `old_joint.vcf.gz` change it to your VCF's name
+   Press **Ctrl + X** to exit
+   Press **Y** to save
+   Press **Enter** to keep the same name
+   
+   
