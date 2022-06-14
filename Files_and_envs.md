@@ -76,17 +76,11 @@ Let's make an environment with some tools for viewing and manipulating VCF files
    We can combine all of these steps together into a simple bash script.
    
    We can view and edit the bash script with `nano <my_script.sh>`, a simple text editor.
-   ```
+   ```bash
    cp ../split_vcf.sh            #Remember you can use tab to autocomplete file, folder, or script names
    nano split_vcf.sh
    ```
-   You can see a few parts to the script;
-   1. 
-   3. We start a for loop, where we tell it to find just our file of interest (similar to how `ls <my_file>` would return just that file)
-   4. 
-   5. 
-   6. Close the first loop
-   7. Close the second loop 
+   You will see something like this:
 
    ```bash
    #! /bin/bash                              #Is a 'shebang'. This is at the top of almost all bash scripts and it tells the shell where to find the interpretter for running your script
@@ -106,5 +100,10 @@ Let's make an environment with some tools for viewing and manipulating VCF files
    Press **Ctrl + X** to exit
    Press **Y** to save
    Press **Enter** to keep the same name
+   
+   Now we can run our script:
+   ```bash
+   bash split_vcf.sh
+   ```
    
    
