@@ -27,6 +27,7 @@ You will notice that the repository for STRipy-pipeline is actually kept in GitL
 For now, just read the [Description](https://gitlab.com/andreassh/stripy-pipeline#description) and [Requirements and installation instructions](https://gitlab.com/andreassh/stripy-pipeline#requirements-and-installation-instructions) sections. We can look at pipelne configuration once it is set-up. 
 
   > **Task 4: Clone the repository**
+  
 The first step in installation is to clone the stripy repository to create a local copy of all the files in your own environment. Use the code provided in the `README.md` file for this step. Change into the directory and have a look inside. 
 
 ```bash
@@ -35,9 +36,11 @@ cd stripy-pipeline ; ls
 ```
 
   > **Task 5: Download dependencies**
+ 
 Dependencies are all the other programs required for a given program/pipeline to run. You will notice that STRipy has five (5) dependencies listed in the [Requirements and installation instructions](https://gitlab.com/andreassh/stripy-pipeline#requirements-and-installation-instructions) section. The links to each tool's repository are provided. I will go through one by one how to install them. Remember to install each in your own working directory each time. Not in the main `/data` directory. Also don't nest the dependencies within each other. Keep them separate. 
 
 - *Python 3*
+
 There are lots of versions of Python available. Different programs are built on different versions, and for them to run effectively, you need to install the specified verison of Python. STRipy requires Python 3. To install Python, we are going to use Conda. 
 
 1. Create a new conda environment with the required version of python already installed.
@@ -76,10 +79,12 @@ rm ExpansionHunter-v5.0.0-linux_x86_64.tar.gz
 NOTE: The ExpansionHunter executable file is kept in the `bin/` directory. An executable is a file that is used to perform various functions or operations on a computer. They are typically stored in the `bin/` directory by default (but not because they are trash lol).
 
 - REViewer
+
 The installation of REViewer will be identical to that of ExpansionHunter, with one important exception. Can you figure out what it is?
 
 - Samtools
-Installation of Samtools is a little different as you would build the package from source. We aren't going to do this step, and instead will use the already installed samtools. But below is the installation code for reference. 
+
+Installation of Samtools is a little different as you would build the package from source. We aren't going to do this step, and instead will use the already installed samtools, which is located in `/data/samtools-1.13/bin/samtools`. Below is the installation code in case you are interested.  
 ```bash
 wget https://github.com/samtools/samtools/releases/download/1.15.1/samtools-1.15.1.tar.bz2
 tar -xvf samtools-1.15.1.tar.bz2 
@@ -91,6 +96,7 @@ make install
 ```
 
 - BWA
+
 Finally, install BWA using instructions on the GitHub page.
 ```bash
 git clone https://github.com/lh3/bwa.git
@@ -98,19 +104,20 @@ cd bwa; make
 ```
 
   > **Task 6: Add the dependencies to the $PATH**
-I am not going to get you to do this in fear of messing up the .bashrc file, and also because there will be too many instances of the same program in the $PATH if we do. But this is a very useful this to do so I will explain what it does but not how to do it. 
+  
+I am not going to get you to do this in fear of messing up the `.bashrc` file, and also because there will be too many instances of the same program in the `$PATH` if we do. But this is a very useful thing to do so I will explain what it does but not how to do it. 
 
-Essentially, the $PATH is an environmental variable. Environment variables hold values related to the current environment, like the Operating System or user sessions. $PATH specifies the directories in which executable programs are located on the machine that can be started without knowing and typing the whole path to the file on the command line.
+Essentially, the `$PATH` is an environmental variable. Environment variables hold values related to the current environment, like the Operating System or user sessions. `$PATH` specifies the directories in which executable programs are located on the machine that can be started without knowing and typing the whole path to the file on the command line.
 
 So rather than having to type the full path to the executable file: `/data/samtools-1.13/bin/samtools` you can type `samtools`. This is a great shortcut. 
 
 ## Part 2 - Configure STRipy
-Navigate to the ["Configure"]([url](https://gitlab.com/andreassh/stripy-pipeline#configuration)) subsection of the STRipy-pipeline page. Have a read of hte diferent pipeline parameters that you can modify and their default values. 
-- All of these parameters can be adjusted in using a file called `config.json` which should be in your stripy-pipeline working directory as it was cloned from the git lab repository.
+Navigate to the ["Configure"]([url](https://gitlab.com/andreassh/stripy-pipeline#configuration)) subsection of the STRipy-pipeline page. Have a read of the different pipeline parameters that you can modify and their default values. 
+- All of these parameters can be adjusted using a file called `config.json` which will be in your `stripy-pipeline/` working directory as it was cloned from the git lab repository.
 
- > **Task 7: Navigate to the config.json file and open it to have a look how it is formatted**
-- The first four parameters define where the executable file is stored for each of the dependencies. As mentioned, these would usually be added to the $PATH environmental variable so that you can just type the tool name rather than spelling out the entire path. Because we are not adding the tool to the $PATH, you will need to specify the full path name in the config file. 
-- For the remaining parameters, just keep as default. 
+ > **Task 7: Navigate to the `config.json` file and open it to have a look at how it is formatted**
+- The first four parameters define where the executable file is stored for each of the dependencies. As mentioned, these would usually be added to the `$PATH` environmental variable so that you could just type the tool name rather than spelling out the entire path. Because we are not adding the tool to the `$PATH`, you will need to specify the full path name in the `config.json` file. 
+- For the remaining parameters, just keep them as default. 
 
 ## Part 3 - Run STRipy on Test Data
 Navigate to the ["Usage"](https://gitlab.com/andreassh/stripy-pipeline#usage) subsection of the STRipy-pipeline page. Have a read.
@@ -120,7 +127,7 @@ Navigate to the ["Usage"](https://gitlab.com/andreassh/stripy-pipeline#usage) su
 cd stripy-pipeline #if you're not already there
 nano run-stripy.sh
 ```
-This will open a new window in terminal where you can edit the file. Start typing! Use the code in the stripy git lab as a guide (printed below for reference)
+This will open a new window in terminal where you can edit the file. Start typing! Use the code in the stripy git lab as a guide (printed below for reference). Each parameter option (denoted by the leading `--`) is explained on the git lab page. 
 ```bash
 python3 stri.py \
         --genome hg38 \
@@ -139,6 +146,8 @@ Some things to keep in mind while you're writing your script:
 - Specify just a couple of loci as a start. Refer to the [STRipy database]([url](https://stripy.org/database)) for locus options. 
 - Use `standard` for the `--analysis` option.
 
+Once you have finished writing your run script, you can save what you have written by pressing `cntrl` + `O` (`^O`) followed by `Enter` key. This writes the files out. Then exit the `nano` window using `cntrl` + `X` (`^X`).
+
  > **Task 9: Change the permissions on the run script to allow it to run. This is done using the `chmod` command.**
 ```bash
 chmod u+x run-stripy.sh
@@ -148,7 +157,7 @@ You can check the file permissions on a file by running:
 ```bash
 ls -lh run-stripy.sh
 ```
-To understand the output and `chmod u+x`, a good explanation is provided [here]([url](https://kb.iu.edu/d/abdb#:~:text=To%20view%20the%20permissions%20for,in%20a%20directory%20in%20Unix.&text=In%20the%20output%20%20above,a%20file%20or%20a%20directory.)).
+To understand the output and `chmod u+x`, a good explanation is provided [here](https://kb.iu.edu/d/abdb#:~:text=To%20view%20the%20permissions%20for,in%20a%20directory%20in%20Unix.&text=In%20the%20output%20%20above,a%20file%20or%20a%20directory.)
  > **Task 10: Run the script!**
 ```bash
 ./run-stripy.sh
