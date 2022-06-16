@@ -156,7 +156,7 @@ To understand the output and `chmod u+x`, a good explanation is provided [here](
 Troubleshoot as need be. 
 
 ## Part 3 - Run STRipy on Real Data
-All of the data we will be using is in the `/data/bioinformatics_masterclass/bams` folder. These are bam files from WGS of individuals with known, diagnosed STR expansions. See below for a table with the phenotype for each sample. Your task is to use STRipy to determine which locus expansion each individual has and give htem a diagnosis!
+All of the data we will be using is in the `/data/bioinformatics_masterclass/bams` folder. These are bam files from WGS of individuals with known, diagnosed STR expansions. See below for a table with the phenotype for each sample. Your task is to use STRipy to determine which locus expansion each individual has and give them a diagnosis!
 
 |     identifier    |     phenotype    |
 |-------------------|------------------|
@@ -169,3 +169,5 @@ All of the data we will be using is in the `/data/bioinformatics_masterclass/bam
 |     S07           |     Ataxia       |
 |     S08           |     Ataxia       |
 |     S09           |     Ataxia       |
+
+Note: Transfer the .HTML files to your local envioronment to view them in a web-browser. 
