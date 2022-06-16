@@ -8,11 +8,11 @@ To learn more about STRipy, there is a [website](https://stripy.org/), and an ac
 ## Part 1 - Set up and install STRipy
 NOTE: I have already installed stripy on the virtual machine, however I am going to get each of you to do it yourselves in your own environment.
 
-  > **Task 1: Create a subdirectory within the `/data/BioinformaticsMasterclass` directory. Keep the name simple e.g. your first name. This directory will act as our own working directory for this tutorial.**
+  > **Task 1: Create a subdirectory within the `/data/bioinformatics_masterclass` directory. Keep the name simple e.g. your first name. This directory will act as our own working directory for this tutorial.**
 - Ignore this step - it has already been done in the previous tutorial.
 
 ```bash
-cd /data/BioinformaticsMasterclass/
+cd /data/bioinformatics_masterclass/
 mkdir <enter_name> ; cd <enter_name>
 ```
 
@@ -156,4 +156,16 @@ To understand the output and `chmod u+x`, a good explanation is provided [here](
 Troubleshoot as need be. 
 
 ## Part 3 - Run STRipy on Real Data
-All of the data we will be using is in the `/data/BioinformaticsMasterclass/bams` folder. 
+All of the data we will be using is in the `/data/bioinformatics_masterclass/bams` folder. These are bam files from WGS of individuals with known, diagnosed STR expansions. See below for a table with the phenotype for each sample. Your task is to use STRipy to determine which locus expansion each individual has and give htem a diagnosis!
+
+|     identifier    |     phenotype    |
+|-------------------|------------------|
+|     S01           |     MND          |
+|     S02           |     Ataxia       |
+|     S03           |     Ataxia       |
+|     S04           |     Ataxia       |
+|     S05           |     SBMA         |
+|     S06           |     Ataxia       |
+|     S07           |     Ataxia       |
+|     S08           |     Ataxia       |
+|     S09           |     Ataxia       |
